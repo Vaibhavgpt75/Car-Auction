@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Insider's Guide to Bank Repo Auctions (2026 Edition)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; 
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 selection:bg-blue-500/30">
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-screen max-h-[850px] overflow-hidden bg-slate-900 border-b border-slate-800 flex items-center justify-center">
+        <div class="absolute inset-0 opacity-30">
+            <!-- Abstract background representing flow/finance/cars -->
+            <img 
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2583&auto=format&fit=crop" 
+                alt="Luxury Car Abstract" 
+                class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/90 to-slate-900/50"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center mt-10">
+            <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-[0.2em] border border-blue-500/30 bg-blue-900/20 text-blue-400 mb-8 uppercase backdrop-blur-sm">
+                2026 Strategic Whitepaper
+            </span>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-8 leading-tight">
+                Buy Cars at <span class="gradient-text">40% Off</span><br>
+                <span class="text-2xl md:text-4xl text-slate-400 font-semibold block mt-4">The Bank Repo Auction Guide</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+                Transforming the complexity of Non-Performing Assets (NPA) into a structured acquisition strategy. 
+                Stop buying retail. Start buying like an insider.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#protocol" class="group flex items-center gap-3 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-[0_0_40px_rgba(37,99,235,0.2)] hover:shadow-[0_0_60px_rgba(37,99,235,0.4)] hover:-translate-y-1">
+                    Start The Protocol 
+                    <i data-lucide="arrow-right" width="20" class="group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="#checklist" class="group flex items-center gap-3 bg-slate-800/80 hover:bg-slate-700 text-slate-200 px-8 py-4 rounded-xl font-semibold border border-slate-700 transition-all hover:-translate-y-1 backdrop-blur-sm">
+                    Inspection Checklist 
+                    <i data-lucide="clipboard-check" width="20" class="group-hover:text-blue-400 transition-colors"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-20 space-y-32">
+
+        <!-- Section 1: The Arbitrage Logic -->
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-4 bg-emerald-500/10 rounded-2xl border border-emerald-500/20 shadow-lg shadow-emerald-500/5">
+                    <i data-lucide="trending-down" class="text-emerald-400" width="32" height="32"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-white tracking-tight">The Economic Logic</h2>
+                    <p class="text-slate-400">Why banks sell cheap and where the profit hides.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="glass-panel p-8 rounded-2xl relative overflow-hidden group hover:bg-slate-800/50 transition-all duration-300">
+                    <div class="absolute -right-6 -top-6 p-4 opacity-[0.03] group-hover:opacity-10 transition-opacity transform group-hover:scale-110 duration-500">
+                        <i data-lucide="landmark" width="140" height="140"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-400">
+                            <i data-lucide="banknote" width="24"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-400 mb-3">Distressed Seller</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Banks are lenders, not car dealers. Every day a seized car sits, it costs them money (rent, security, depreciation). They prioritize <strong>liquidity over value</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-panel p-8 rounded-2xl relative overflow-hidden group hover:bg-slate-800/50 transition-all duration-300 border-orange-500/20">
+                    <div class="absolute -right-6 -top-6 p-4 opacity-[0.03] group-hover:opacity-10 transition-opacity transform group-hover:scale-110 duration-500">
+                        <i data-lucide="alert-triangle" width="140" height="140"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6 text-orange-400">
+                            <i data-lucide="shield-alert" width="24"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-3">"As Is, Where Is"</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            The discount is a <strong>Risk Premium</strong>. The bank gives zero warranty. You are being paid (via the discount) to solve mechanical & bureaucratic problems.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-panel p-8 rounded-2xl relative overflow-hidden group hover:bg-slate-800/50 transition-all duration-300">
+                    <div class="absolute -right-6 -top-6 p-4 opacity-[0.03] group-hover:opacity-10 transition-opacity transform group-hover:scale-110 duration-500">
+                        <i data-lucide="scale" width="140" height="140"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 text-purple-400">
+                            <i data-lucide="gavel" width="24"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">SARFAESI Power</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Under the 2002 Act, the bank's Sale Certificate cleanses the title. You become the legal owner, bypassing the defaulter's claims.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Asset Tiers -->
+        <section>
+            <div class="flex flex-col items-center text-center mb-16">
+                <span class="text-blue-500 font-mono text-xs tracking-widest uppercase mb-3">Inventory Classification</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Know Your Target</h2>
+                <p class="text-slate-400 max-w-2xl text-lg">Not all repo cars are equal. Distinguish between a strategic default and a total loss.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Tier 1 -->
+                <div class="bg-gradient-to-b from-slate-900 to-slate-900/50 border-t-4 border-emerald-500 p-6 rounded-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-emerald-400 font-bold text-xl font-mono">TIER 1</span>
+                        <span class="text-[10px] font-bold tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-1 rounded">TARGET</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Early Default</h4>
+                    <p class="text-slate-500 text-xs mb-4 uppercase tracking-wider font-semibold">0-12 Months Old</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">Strategic defaulters or sudden financial shock. Often still under warranty. Minimal wear. Highest competition.</p>
+                </div>
+
+                <!-- Tier 2 -->
+                <div class="bg-gradient-to-b from-slate-900 to-slate-900/50 border-t-4 border-blue-500 p-6 rounded-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-blue-400 font-bold text-xl font-mono">TIER 2</span>
+                        <span class="text-[10px] font-bold tracking-wider bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">VALUE</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Mid-Cycle</h4>
+                    <p class="text-slate-500 text-xs mb-4 uppercase tracking-wider font-semibold">1-3 Years Old</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">Chronic delinquency. Expect "deferred maintenance" (bald tires, skipped service). Needs minor reconditioning.</p>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="bg-gradient-to-b from-slate-900 to-slate-900/50 border-t-4 border-orange-500 p-6 rounded-xl hover:-translate-y-2 transition-transform duration-300 opacity-80 hover:opacity-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-orange-400 font-bold text-xl font-mono">TIER 3</span>
+                        <span class="text-[10px] font-bold tracking-wider bg-orange-500/10 text-orange-400 border border-orange-500/20 px-2 py-1 rounded">RISKY</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Hard Recovery</h4>
+                    <p class="text-slate-500 text-xs mb-4 uppercase tracking-wider font-semibold">Hostile Seizure</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">Police intervention was needed. High risk of sabotage (sugar in tank, missing ECU, cut wiring). Avoid.</p>
+                </div>
+
+                <!-- Tier 4 -->
+                <div class="bg-gradient-to-b from-slate-900 to-slate-900/50 border-t-4 border-red-500 p-6 rounded-xl hover:-translate-y-2 transition-transform duration-300 opacity-60 hover:opacity-100 grayscale hover:grayscale-0">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-red-400 font-bold text-xl font-mono">TIER 4</span>
+                        <span class="text-[10px] font-bold tracking-wider bg-red-500/10 text-red-400 border border-red-500/20 px-2 py-1 rounded">SALVAGE</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Total Loss</h4>
+                    <p class="text-slate-500 text-xs mb-4 uppercase tracking-wider font-semibold">Accident/Flood</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">Insurance write-offs. Structural damage. Flood cars. Only for dismantlers or scrap dealers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Protocol (Timeline) -->
+        <section id="protocol">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="p-4 bg-blue-500/10 rounded-2xl border border-blue-500/20 shadow-lg shadow-blue-500/5">
+                    <i data-lucide="map" class="text-blue-400" width="32" height="32"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-white tracking-tight">The Acquisition Protocol</h2>
+                    <p class="text-slate-400">Step-by-step execution strategy.</p>
+                </div>
+            </div>
+
+            <div class="relative space-y-12">
+                <!-- Vertical Line (Desktop only) -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-800 -translate-x-1/2"></div>
+
+                <!-- Step 1 -->
+                <div class="relative flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="flex-1 text-right order-2 md:order-1">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">1. Discovery & Registration</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Register on <strong>MSTC Ecommerce</strong> (Govt PSU) or <strong>IBAPI</strong>. Pay the one-time registration fee (~₹11,800). This is your entry ticket to the inventory.</p>
+                    </div>
+                    <div class="relative z-10 w-12 h-12 flex items-center justify-center bg-slate-900 border-2 border-slate-700 rounded-full order-1 md:order-2 group-hover:border-blue-500 group-hover:scale-110 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                        <span class="font-mono font-bold text-blue-500">01</span>
+                    </div>
+                    <div class="flex-1 order-3">
+                        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700/50 text-xs text-slate-400 relative">
+                            <div class="absolute top-4 left-0 w-1 h-8 bg-blue-500 rounded-r"></div>
+                            <strong>Platform Tip:</strong> MSTC is the gold standard for PSU banks (SBI, PNB). Private banks often use their own portals or aggregators.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="flex-1 order-3 md:order-1">
+                        <div class="bg-red-900/10 p-5 rounded-xl border border-red-500/20 text-xs text-red-200 relative">
+                            <div class="absolute top-4 right-0 w-1 h-8 bg-red-500 rounded-l"></div>
+                            <strong>CRITICAL RED FLAG:</strong> Verify "Physical Possession". If the notice says "Symbolic Possession", <span class="underline decoration-red-500 decoration-2 font-bold">WALK AWAY</span>. The car is not in the bank's hands; you are buying a lawsuit.
+                        </div>
+                    </div>
+                    <div class="relative z-10 w-12 h-12 flex items-center justify-center bg-slate-900 border-2 border-slate-700 rounded-full order-1 md:order-2 group-hover:border-blue-500 group-hover:scale-110 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                        <span class="font-mono font-bold text-blue-500">02</span>
+                    </div>
+                    <div class="flex-1 text-left order-2 md:order-3">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">2. Remote Due Diligence</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Before visiting, use apps like <strong>mParivahan</strong>. Check for pending challans (fines transfer to you!) and ensure the car isn't blacklisted on Vahan portal.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="flex-1 text-right order-2 md:order-1">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">3. The Yard Visit</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Static inspection only. No test drives allowed. Bring a mechanic. Check oil cap for "milky" residue (blown head gasket) and verify VIN matches the RC perfectly.</p>
+                    </div>
+                    <div class="relative z-10 w-12 h-12 flex items-center justify-center bg-slate-900 border-2 border-slate-700 rounded-full order-1 md:order-2 group-hover:border-blue-500 group-hover:scale-110 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                        <span class="font-mono font-bold text-blue-500">03</span>
+                    </div>
+                    <div class="flex-1 order-3">
+                         <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700/50 text-xs text-slate-400 relative">
+                            <div class="absolute top-4 left-0 w-1 h-8 bg-blue-500 rounded-r"></div>
+                            <strong>Key Question:</strong> "Are the original keys available?" If not, budget ₹20k-50k for lockset replacement and assume forced seizure.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="flex-1 order-3 md:order-1">
+                        <div class="bg-emerald-900/10 p-5 rounded-xl border border-emerald-500/20 text-xs text-emerald-200 relative">
+                            <div class="absolute top-4 right-0 w-1 h-8 bg-emerald-500 rounded-l"></div>
+                            <strong>Pro Tip (8-Min Rule):</strong> Don't bid early. Auctions auto-extend by 8 mins if a bid is placed near the end. Wait for the final minutes to place your limit bid to avoid inflating the price.
+                        </div>
+                    </div>
+                    <div class="relative z-10 w-12 h-12 flex items-center justify-center bg-slate-900 border-2 border-slate-700 rounded-full order-1 md:order-2 group-hover:border-blue-500 group-hover:scale-110 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                        <span class="font-mono font-bold text-blue-500">04</span>
+                    </div>
+                    <div class="flex-1 text-left order-2 md:order-3">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">4. Bidding & Payment</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Deposit EMD (10%). If you win, pay 25% within 24 hours (T+1) and the balance 75% within 15 days. Miss this, and you <strong>forfeit your deposit</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="relative flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="flex-1 text-right order-2 md:order-1">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">5. Delivery & RTO</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Collect the <strong>Sale Certificate</strong> and <strong>Form 32</strong>. These are your golden tickets to transfer ownership without the previous owner's signature.</p>
+                    </div>
+                    <div class="relative z-10 w-12 h-12 flex items-center justify-center bg-slate-900 border-2 border-slate-700 rounded-full order-1 md:order-2 group-hover:border-blue-500 group-hover:scale-110 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+                        <span class="font-mono font-bold text-blue-500">05</span>
+                    </div>
+                    <div class="flex-1 order-3">
+                        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700/50 text-xs text-slate-400 relative">
+                            <div class="absolute top-4 left-0 w-1 h-8 bg-blue-500 rounded-r"></div>
+                            <strong>Insurance Gap:</strong> The moment you win, the car is uninsured. Buy a Third-Party policy online via Chassis No. immediately before driving out.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Inspection Checklist -->
+        <section id="checklist">
+            <div class="glass-panel rounded-3xl p-8 md:p-12 overflow-hidden relative">
+                <!-- Background decorative element -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                
+                <div class="flex items-center justify-between mb-10 relative z-10">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-white">The "Static" Inspection Checklist</h2>
+                        <p class="text-slate-400 text-sm mt-1">You can't drive it, but you can forensically analyze it.</p>
+                    </div>
+                    <i data-lucide="clipboard-list" class="text-blue-500" width="48" height="48"></i>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+                    <div class="space-y-4">
+                        <div class="flex gap-5 p-5 bg-slate-800/60 rounded-xl border border-slate-700 hover:border-red-500/50 transition-colors">
+                            <div class="min-w-[48px] h-[48px] bg-red-500/10 rounded-lg flex items-center justify-center text-red-400">
+                                <i data-lucide="droplet" width="24"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">The Oil Cap Test</h4>
+                                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Check underside of oil filler cap. Milky/Frothy residue = Coolant mixing (Blown Head Gasket). <strong class="text-red-400">WALK AWAY.</strong></p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 p-5 bg-slate-800/60 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-colors">
+                            <div class="min-w-[48px] h-[48px] bg-blue-500/10 rounded-lg flex items-center justify-center text-blue-400">
+                                <i data-lucide="wind" width="24"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Cold Start Smoke</h4>
+                                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Blue Smoke = Burning Oil. White Smoke (persistent) = Engine Damage. Black Smoke = Fuel System (Fixable).</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 p-5 bg-slate-800/60 rounded-xl border border-slate-700 hover:border-yellow-500/50 transition-colors">
+                            <div class="min-w-[48px] h-[48px] bg-yellow-500/10 rounded-lg flex items-center justify-center text-yellow-400">
+                                <i data-lucide="alert-octagon" width="24"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Tyre Date Codes</h4>
+                                <p class="text-xs text-slate-400 mt-2 leading-relaxed">If Odo says 20k km but tyres are brand new or mismatched dates (check 4-digit code on sidewall), the meter is likely rolled back.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex gap-5 p-5 bg-slate-800/60 rounded-xl border border-slate-700 hover:border-orange-500/50 transition-colors">
+                            <div class="min-w-[48px] h-[48px] bg-orange-500/10 rounded-lg flex items-center justify-center text-orange-400">
+                                <i data-lucide="waves" width="24"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Flood Detection</h4>
+                                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Pull seatbelt to the very end. Look for mold/stains. Check seat rails for heavy rust. Smell the interior for dampness/musty odor.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 p-5 bg-slate-800/60 rounded-xl border border-slate-700 hover:border-purple-500/50 transition-colors">
+                            <div class="min-w-[48px] h-[48px] bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-400">
+                                <i data-lucide="file-warning" width="24"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">VIN Verification</h4>
+                                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Match Chassis No. on car firewall/door pillar with the RC copy. A single digit mismatch = RTO Nightmare. Verify manufacturing year code.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 p-5 bg-slate-800/60 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                            <div class="min-w-[48px] h-[48px] bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-400">
+                                <i data-lucide="key" width="24"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Key Availability</h4>
+                                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Always ask. Missing keys suggest hostile seizure and potential sabotage. Recoding high-end keys can cost ₹50,000+.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: The Financial Math (2026 GST Update) -->
+        <section>
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-4 bg-indigo-500/10 rounded-2xl border border-indigo-500/20 shadow-lg shadow-indigo-500/5">
+                    <i data-lucide="calculator" class="text-indigo-400" width="32" height="32"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-white tracking-tight">The "True Cost" Formula</h2>
+                    <p class="text-slate-400">Don't just bid. Calculate the Landing Cost.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div class="bg-slate-900 border border-slate-700 rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="p-6 border-b border-slate-800 bg-slate-800/50 flex justify-between items-center">
+                        <span class="text-slate-300 font-mono font-bold">EXAMPLE: 2023 SUV</span>
+                        <span class="bg-indigo-900/40 text-indigo-300 text-xs px-3 py-1.5 rounded-full border border-indigo-500/30 flex items-center gap-2">
+                            <i data-lucide="check-circle" width="12"></i> 2026 GST Rules
+                        </span>
+                    </div>
+                    <div class="p-8 space-y-5 font-mono text-sm relative">
+                        <!-- Receipt Style Content -->
+                        <div class="flex justify-between items-center text-slate-400">
+                            <span>Winning Bid</span>
+                            <span class="text-white text-base">₹ 5,00,000</span>
+                        </div>
+                        
+                        <div class="h-px bg-slate-800 border-t border-dashed border-slate-700"></div>
+
+                        <div class="flex justify-between items-center text-orange-400 bg-orange-900/10 p-2 -mx-2 rounded">
+                            <div class="flex items-center gap-2">
+                                <span>(+) GST @ 18%</span>
+                                <i data-lucide="info" width="14" class="cursor-help" title="2026 Update: Uniform 18% rate for all used vehicles"></i>
+                            </div>
+                            <span>₹ 90,000</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center text-slate-400">
+                            <span>(+) TCS @ 1%</span>
+                            <span class="text-white">₹ 5,000</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center text-red-400">
+                            <span>(+) Pending Challans</span>
+                            <span>₹ 15,000</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center text-red-400">
+                            <span>(+) Yard Parking Dues</span>
+                            <span>₹ 5,000</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center text-slate-400">
+                            <span>(+) Repairs (10% Buffer)</span>
+                            <span class="text-white">₹ 50,000</span>
+                        </div>
+                        
+                        <div class="h-px bg-slate-500 my-4"></div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-400 font-bold text-lg">TRUE LANDING COST</span>
+                            <span class="text-white font-bold text-2xl">₹ 6,65,000</span>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-slate-950/50 text-xs text-center text-slate-500 border-t border-slate-800">
+                        *Always check if the Bid is Cum-Tax (Inclusive) or Ex-Tax (Exclusive) in the tender document.
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="glass-panel p-6 rounded-2xl border-l-4 border-indigo-500">
+                        <h4 class="text-indigo-400 font-bold mb-2 flex items-center gap-2">
+                            <i data-lucide="percent" width="18"></i> GST 2026 Update
+                        </h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            <strong>Uniform 18% Rate:</strong> As of Jan 2026, a uniform 18% GST applies to all used vehicles (including EVs and SUVs). This simplifies calculation but can increase costs for small cars previously taxed at 12%.
+                        </p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-l-4 border-red-500">
+                        <h4 class="text-red-400 font-bold mb-2 flex items-center gap-2">
+                            <i data-lucide="alert-circle" width="18"></i> Hidden Liability
+                        </h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            <strong>Challans & Parking:</strong> You inherit the car's history. Unpaid traffic fines and yard "gate pass" fees are usually buyer's liability. Always demand a statement of dues before bidding.
+                        </p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-l-4 border-emerald-500">
+                        <h4 class="text-emerald-400 font-bold mb-2 flex items-center gap-2">
+                            <i data-lucide="target" width="18"></i> The Sweet Spot
+                        </h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Look for "Cum-Tax" bids where GST is included in the reserve price. This instantly saves you 18% compared to an "Ex-Tax" auction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-slate-800 pt-16 pb-12 text-center bg-slate-950">
+            <div class="flex justify-center gap-2 text-orange-500 mb-8 items-center">
+                <i data-lucide="shield-alert" width="24"></i>
+                <span class="font-bold tracking-widest uppercase">Risk Disclaimer</span>
+            </div>
+            <p class="text-slate-500 text-sm max-w-3xl mx-auto leading-relaxed mb-10">
+                This guide is for educational purposes only. Bank auction terms vary by specific tender. 
+                Always verify documents with an RTO consultant or legal expert before bidding. 
+                Repo auctions involve financial risk and no warranty.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 text-slate-400 text-sm font-mono mb-12">
+                <a href="https://ibapi.in" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="external-link" width="14"></i> IBAPI Portal
+                </a>
+                <a href="https://www.mstcecommerce.com" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="external-link" width="14"></i> MSTC Ecommerce
+                </a>
+                <a href="https://parivahan.gov.in" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="external-link" width="14"></i> Parivahan Sewa
+                </a>
+            </div>
+
+            <div class="text-slate-700 text-xs">
+                © 2026 Automobile Industry Expert & Financial Analyst
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
